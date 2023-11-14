@@ -1,27 +1,8 @@
-﻿
+# 基于OpenHarmony的主被动式断指辅具
 
+## <a name="_toc8369"></a>团队：Finger
 
-
-
-
-
-
-
-基于OpenHarmony的主被动式断指辅具
-
-
-
-
-
-
-
-
-
-日期：2023年11月9日
-
-<a name="_toc8369"></a>基于OpenHarmony的主被动式断指辅具
-
-# <a name="_toc150461008"></a>摘  要
+# <a name="_toc150461007"></a>摘  要
 
 我国的断指患者人数众多，断指给患者的生活带来了诸多不便。然而，市场上大多数产品透气性差，型号固定不能完全契合患者本身残指，多次更换义肢导致患者的义肢成本提高。并且现有的辅具并无康复功能，甚至患者在购买后无法进行熟练使用造成了残肢磨损，形成二次伤害，需要长期结合才可以达到正常使用，对于患者十分不便。
 
@@ -32,50 +13,48 @@
 此外，我们的系统还设置了交流平台，患者可以随时与其他患者或专业医生进行在线交流，分享康复经验和心得。通过这个平台，患者可以得到更多的支持和帮助，从而更好地应对康复过程中的各种挑战。
 
 这样的个性化的辅具定制与康复软件的定制形成闭环康复流程，不仅缩短了患者的等待周期、降低产品费用、使产品的精细化和契合度更高，还使枯燥的康复过程娱乐化，更加全面地指出患者的康复状况，让患者通过软件测试和交流的过程中就可以完成绝大多数的康复锻炼。
-II
-![](Aspose.Words.ce33244a-6ec5-4234-a290-ad7348f15b6c.001.png)
 
-目  录
+# <a name="_toc150461008"></a>目  录
 
-[摘  要	I](#_toc150461008)
+[摘  要	](#_toc150461008)
 
-[1 软件分类	1](#_toc150461009)
+[1 软件分类	](#_toc150461009)
 
-[2 应用领域	2](#_toc150461010)
+[2 应用领域	](#_toc150461010)
 
-[3 作品概述	3](#_toc150461011)
+[3 作品概述	](#_toc150461011)
 
-[3.1 软件背景及应用领域	3](#_toc150461012)
+[3.1 软件背景及应用领域	](#_toc150461012)
 
-[3.2 作品特点和设计思路	3](#_toc150461013)
+[3.2 作品特点和设计思路	](#_toc150461013)
 
-[3.2.1 项目主要创新点	3](#_toc150461014)
+[3.2.1 项目主要创新点	](#_toc150461014)
 
-[3.2.2 作品设计思路	4](#_toc150461015)
+[3.2.2 作品设计思路	](#_toc150461015)
 
-[3.3 功能描述	5](#_toc150461016)
+[3.3 功能描述	](#_toc150461016)
 
-[3.4 体系结构和关键技术点	5](#_toc150461017)
+[3.4 体系结构和关键技术点	](#_toc150461017)
 
-[3.4.1 登录	5](#_toc150461018)
+[3.4.1 登录	](#_toc150461018)
 
-[3.4.2 修改昵称	7](#_toc150461019)
+[3.4.2 修改昵称	](#_toc150461019)
 
-[3.4.3 信息选择	8](#_toc150461020)
+[3.4.3 信息选择	](#_toc150461020)
 
-[3.4.4 康复评估	9](#_toc150461021)
+[3.4.4 康复评估	](#_toc150461021)
 
-[3.5 功能模块设计	12](#_toc150461022)
+[3.5 功能模块设计	](#_toc150461022)
 
-[3.5.1 我的页面	12](#_toc150461023)
+[3.5.1 我的页面 ](#_toc150461023)
 
-[3.5.2 康复评估	13](#_toc150461024)
+[3.5.2 康复评估	](#_toc150461024)
 
-[3.5.3 健康服务	14](#_toc150461025)
+[3.5.3 健康服务	](#_toc150461025)
 
-[3.5.4 社交支持和资源分享	15](#_toc150461026)
+[3.5.4 社交支持和资源分享	](#_toc150461026)
 
-[3.6 验收标准	15](#_toc150461027)
+[3.6 验收标准	](#_toc150461027)
 
 
 
@@ -113,14 +92,14 @@ OpenHarmony作为一种开源的操作系统，为断指辅具的开发提供了
 
 通过OpenHarmony的分布式特点，可以将传感器与假肢相结合，实现智能感知和响应。这种智能感知技术可以为患者提供更加自然、舒适的使用体验，同时也可以提高假肢的效能和性能。例如，通过传感器可以感知手指的移动和受力情况，并将这些信息传递给假肢控制系统，从而实现更加精准的控制和响应。
 
-该项目运用3维扫描患者手部来进行一对一设计，采用衍生式设计的方法，通过多次迭代，不断优化设计方案，我们利用华为云平台来进行EMG手势识别算法的搭建，借助modelarts使过程变得简单高效，同时算法得到优化，准确的识别多种手势，实现主动控制。在基于openharmony开发的应用端上实时观测到手势的识别结果，同时，OpenHarmony的开源特性也为开发者提供了更多的自由和创新空间，推动了断指辅具技术的不断发展和进步。小游戏来辅助患者更好的使用。总之，我们将不断探索和改进，让这款主被动式断指辅具更加贴近人们的生活，为用户带来更大的便利和舒适。
+该项目运用3维扫描患者手部来进行一对一设计，采用衍生式设计的方法，通过多次迭代，不断优化设计方案，我们利用华为云平台来进行EMG手势识别算法的搭建，借助吗ModelArts使过程变得简单高效，同时算法得到优化，准确的识别多种手势，实现主动控制。在基于OpenHarmony开发的应用端上实时观测到手势的识别结果，同时，OpenHarmony的开源特性也为开发者提供了更多的自由和创新空间，推动了断指辅具技术的不断发展和进步。小游戏来辅助患者更好的使用。总之，我们将不断探索和改进，让这款主被动式断指辅具更加贴近人们的生活，为用户带来更大的便利和舒适。
 ## <a name="_toc150461013"></a>**3.2 作品特点和设计思路**
 ### <a name="_toc150461014"></a>**3.2.1 项目主要创新点**
 （1）个性化康复辅具设计：通过三维扫描和修复技术，项目团队能够获取患者的真实残指模型，并进行个性化的三维修复建模。这使得康复辅具可以根据每位患者的具体情况进行定制，以确保最佳的适配性和效果。
 
 （2）3D打印技术的应用：项目充分利用了3D打印技术，将辅具的骨骼框架和外敷皮肤以高精度制造。这不仅提高了生产效率，还确保了产品的轻量化设计和美观度，远超传统义肢。
 
-（3）康复训练游戏和评估系统：项目引入了基于鸿蒙交互式系统的康复训练游戏，为患者提供定制化的康复训练，可以在多个场景进行。此外，康复评估系统会根据患者的训练动作和训练次数等数据提供更好的康复训练建议，有助于患者更快地康复。
+（3）康复训练和评估系统：项目引入了基于鸿蒙交互式系统的康复训练，为患者提供定制化的康复训练，可以在多个场景进行。此外，康复评估系统会根据患者的训练动作和训练次数等数据提供更好的康复训练建议，有助于患者更快地康复。
 
 （4）闭环康复系统：项目提供了一种闭环康复解决方案，将康复辅具的设计和制造与康复训练、评估和建议相结合。这种综合性的康复系统可以更全面地满足断指患者的康复需求，从而提高了康复效果。
 
@@ -157,7 +136,7 @@ Login函数：这是一个用于处理登录逻辑的函数。在该函数中，
 
 httpRequest对象：通过http.createHttp创建了一个HTTP请求对象。
 
-定义了登录接口的url：登录请求将被发送到 http://127.0.0.1:8000/login/。
+定义了登录接口的url：登录请求将被发送到IP地址和端口号。
 
 httpRequest.request方法：通过该方法发起HTTP请求，使用了POST方法，设置了请求头的Content-Type为application/json。
 
@@ -165,130 +144,144 @@ extraData中包含了登录所需的用户名和密码，这两个值可能是�
 
 connectTimeout和readTimeout：设置了连接和读取的超时时间。
 
+```java
 Login() {
-`  `**let** httpRequest = http.createHttp();
-`  `**let** url = "http://127.0.0.1:8000/login/"
-`  `httpRequest.request(
-`    `url,
-`    `{
-`      `method: http.RequestMethod.POST,
-`      `header: {
-`        `'Content-Type': 'application/json'
-`      `},
-`      `extraData: {
-`        `"username": **this**.username,
-`        `"password": **this**.password
-`      `},
-`      `connectTimeout: 6000,
-`      `readTimeout: 6000,
-`    `}, (err, data) => {
-`    `**if** (!err) {
-`      `**if** (data.responseCode == 200) {
-`        `console.info("传递成功")
-`        `console.info("从服务器返回接口返回数据成功，传递参数" + data.result)
-`      `}
-`      `console.info('Result:' + data.result);
-`      `console.info('code:' + data.responseCode);
-`      `console.info('header:' + JSON.stringify(data.header));
-`      `console.info('cookies:' + data.cookies);
-`      `**if**(data.result == '登录成功') {
-`        `router.push({
-`          `url:"pages/fuwu"
-`        `})
-`      `}
-`      `**else if** (data.result == '账户或密码错误'){
-`        `prompt.showToast({
-`          `message:"账户密码错误",
-`          `duration:2000,
+  let httpRequest = http.createHttp();
+ 
+  let url = "http://127.0.0.1:8000/login/"
+  httpRequest.request(
+    url,
+    {
+      method: http.RequestMethod.POST,
+      header: {
+        'Content-Type': 'application/json'
+      },
+      extraData: {
+       
+        "username": this.username,
+        "password": this.password
+      },
+      connectTimeout: 6000,
+      readTimeout: 6000,
+    }, (err, data) => {
+    if (!err) {
+      if (data.responseCode == 200) {
+        console.info("传递成功")
+        console.info("从服务器返回接口返回数据成功，传递参数" + data.result)
+      }
+      console.info('Result:' + data.result);
+      console.info('code:' + data.responseCode);
+      console.info('header:' + JSON.stringify(data.header));
+      console.info('cookies:' + data.cookies);
+      //修改3：对data.result进行处理，此例子是后端传递回来登录成功，在控制台上打印okok，则根据自己需求将下方修改即可
+      if(data.result == '登录成功') {
+        router.push({
+          url:"pages/fuwu"
+        })
+      }
+      else if (data.result == '账户或密码错误'){
+        prompt.showToast({
+          message:"账户密码错误",
+          duration:2000,
 
-`        `});
-`      `}
-`    `} **else** {
+        });
+      }
+    } else {
 
-`      `console.info('error:' + JSON.stringify(err));
+      console.info('error:' + JSON.stringify(err));
 
-`      `httpRequest.destroy();
-`    `}
-`  `}
-`  `);
+      httpRequest.destroy();
+    }
+  }
+  );
 }
+```
 ### <a name="_toc150461019"></a>**3.4.2 修改昵称**
 首先在前端应用中创建一个弹窗元素，包括一个文本输入框、一段文字、以及两个按钮，用于实现修改昵称的功能。
 
-`    `TextInput({ placeholder: '', text: **this**.textValue }).height(60).width('90%')
-.onChange((value: string) => {
-`        `**this**.textValue = value
-`      `})
-`    `Text('是否更换?').fontSize(16).margin({ top:10, bottom: 10 })
-`    `Flex({ justifyContent: FlexAlign.SpaceAround }) {
-`      `Button('取消')
-.onClick(() => {
-`          `**this**.controller.close()
-`          `**this**.cancel()
-
-`      `Button('更换')
-.onClick(() => {
-`          `**this**.inputValue = **this**.textValue//替换
-`          `**this**.controller.close()
-`          `**this**.confirm()
-
+```java
+Text('更换昵称').fontSize(20).margin({ top: 10, bottom: 10 })
+TextInput({ placeholder: '', text: this.textValue }).height(60).width('90%')
+  .onChange((value: string) => {
+    this.textValue = value
+  })
+Text('是否更换?').fontSize(16).margin({ top:10, bottom: 10 })
+Flex({ justifyContent: FlexAlign.SpaceAround }) {
+  Button('取消')
+    .onClick(() => {
+      this.controller.close()
+      this.cancel()
+    }).backgroundColor(0xffffff).fontColor(Color.Black)
+  Button('更换')
+    .onClick(() => {
+      this.inputValue = this.textValue//替换
+      this.controller.close()
+      this.confirm()
+    }).backgroundColor(0xffffff).fontColor(Color.Red)
+}.margin({ bottom: 10 })
+```
 然后设置修改，这段代码片段整体上是在组件中声明了一些状态和回调函数，然后使用这些状态和回调函数创建了一个自定义对话框控制器，以实现对话框的定制和交互。
 
-@State message: string = '我的'
-@State index:number = 0 //设置下方导航栏的顺序
+```java
 @State textValue: string = ''
 @State inputValue: string = '昵称'//设置需要修改的初始值
-dialogController: CustomDialogController = **new** CustomDialogController({
-`  `builder: CustomDialogExample({
-`    `cancel: **this**.onCancel,
-`    `confirm: **this**.onAccept,
-`    `textValue: $textValue,
-`    `inputValue: $inputValue
-`  `}),
-`  `cancel: **this**.existApp,
-`  `autoCancel: **true**,
-`  `alignment: DialogAlignment.Default,
-`  `offset: { dx: 0, dy: -20 },
-`  `gridCount: 4,
-`  `customStyle: **false**
+dialogController: CustomDialogController = new CustomDialogController({
+  builder: CustomDialogExample({
+    cancel: this.onCancel,
+    confirm: this.onAccept,
+    textValue: $textValue,
+    inputValue: $inputValue
+  }),
+  cancel: this.existApp,
+  autoCancel: true,
+  alignment: DialogAlignment.Default,
+  offset: { dx: 0, dy: -20 },
+  gridCount: 4,
+  customStyle: false
 })
 
 aboutToDisappear() {
-`  `**delete this**.dialogController,
-`  `**this**.dialogController = **undefined**
+  delete this.dialogController,
+  this.dialogController = undefined
 }
 
 onCancel() {
-`  `console.info('Callback when the first button is clicked')
+  console.info('Callback when the first button is clicked')
 }
 
 onAccept() {
-`  `console.info('Callback when the second button is clicked')
+  console.info('Callback when the second button is clicked')
 }
 
 existApp() {
-`  `console.info('Click the callback in the blank area')
+  console.info('Click the callback in the blank area')
 }
+```
+
 ### <a name="_toc150461020"></a>**3.4.3 信息选择**
 这段代码的目的是创建一个按钮，当点击按钮时，弹出一个文本选择对话框，用户可以从中选择伤残类型。选择的结果会通过回调函数进行处理。
-
+```java
 Button("伤残类型")
-.margin(20)
-.onClick(() => {
-`    `TextPickerDialog.show({
-`      `range: **this**.shangcanage,
-`      `onAccept: (value: TextPickerResult) => {
-`        `**this**.select1 = value.index
-`        `console.info("TextPickerDialog:onAccept()" + JSON.stringify(value))
-`      `},
-`      `onCancel: () => {
-`        `console.info("TextPickerDialog:onCancel()")
-`      `},
-`      `onChange: (value: TextPickerResult) => {
-`        `console.info("TextPickerDialog:onChange()" + JSON.stringify(value))
-`      `}
-`    `})
-`  `})
+  .margin(20)
+  .onClick(() => {
+    TextPickerDialog.show({
+      range: this.shangcanage,
+      //selected: this.select1,
+      onAccept: (value: TextPickerResult) => {
+        // 设置select为按下确定按钮时候的选中项index，这样当弹窗再次弹出时显示选中的是上一次确定的选项
+        this.select1 = value.index
+        console.info("TextPickerDialog:onAccept()" + JSON.stringify(value))
+      },
+      onCancel: () => {
+        console.info("TextPickerDialog:onCancel()")
+      },
+      onChange: (value: TextPickerResult) => {
+        console.info("TextPickerDialog:onChange()" + JSON.stringify(value))
+      }
+    })
+  })
+```
+
 ### <a name="_toc150461021"></a>**3.4.4 康复评估**
 首先设置数据传输，用来训练数据得到结果。
 
@@ -296,138 +289,160 @@ Button("伤残类型")
 
 在请求的extraData 中包含了一些参数，需要根据实际情况传递有效的数据。在请求回调函数中，处理请求成功和失败的情况。如果返回的结果是 '测试成功'，则显示提示信息；否则，显示账户密码错误的提示信息。最后，根据请求的结果进行相应的处理，包括日志输出和提示信息。
 
-S\_login() {
-`  `**let** httpRequest = http.createHttp();
-`  `**let** url = "https://aip.baidubce.com/rpc/2.0/ai\_custom\_bml/v1/table\_infer/emg\_finger?access\_token=24.a96f9a18bc0298ca1f07dbd8b5b63945.2592000.1694417034.282335-37576462"
-`  `httpRequest.request(
-`    `url,
-`    `{
-`      `method: http.RequestMethod.POST,
-`      `header: {
-`        `'Content-Type': 'application/json'
+```
+S_login() {
+  let httpRequest = http.createHttp();
 
-`      `},
-`      `extraData: {
-`        `"include\_req":**false**,
-`        `"data":[{
+  let url = "https://aip.baidubce.com/rpc/2.0/ai_custom_bml/v1/table_infer/emg_finger?access_token=24.a96f9a18bc0298ca1f07dbd8b5b63945.2592000.1694417034.282335-37576462"
+  httpRequest.request(
+    url,
+    {
+      method: http.RequestMethod.POST,
+      header: {
+        'Content-Type': 'application/json'
 
-`        `}
+      },
+      extraData: {
+        "include_req":false,
+        "data":[{
+          "col0":0.046904,
+          "col1":0.03827,
+          "col2":0.027714,
+          "col3":0.027727,
+            ...
+          "col78":1,
+          "col79":1
+        }
+        ]
+      },
+      connectTimeout: 6000,
+      readTimeout: 6000,
+    }, (err, data) => {
+    if (!err) {
+      if (data.responseCode == 200) {
+        console.info("传递成功")
+        console.info("从服务器返回接口返回数据成功，传递参数" + data.result)
+      }
+      //console.info('Result:' + data.result['username']);
+      console.info('Result:' + data.result);
+      console.info('code:' + data.responseCode);
+      console.info('header:' + JSON.stringify(data.header));
+      console.info('cookies:' + data.cookies);
+  
+      if(data.result == '测试成功') {
+        console.info('okok');
+        Prompt.showToast({
+          message:"测试成功",
+          duration:2000,
 
-`        `]
-`      `},
-`      `connectTimeout: 6000,
-`      `readTimeout: 6000,
-`    `}, (err, data) => {
-`    `**if** (!err) {
-`      `**if** (data.responseCode == 200) {
-`        `console.info("传递成功")
-`        `console.info("从服务器返回接口返回数据成功，传递参数" + data.result)
-`      `}
-`      `console.info('Result:' + data.result);
-`      `console.info('code:' + data.responseCode);
-`      `console.info('header:' + JSON.stringify(data.header));
-`      `console.info('cookies:' + data.cookies);
+        });
 
-`      `**if**(data.result == '测试成功') {
-`        `console.info('okok');
-`        `Prompt.showToast({
-`          `message:"测试成功",
-`          `duration:2000,
+      }
+    } else {
+      console.info('error:' + JSON.stringify(err));
 
-`        `});
+      httpRequest.destroy();
 
-`      `}
-`    `} **else** {
-`      `console.info('error:' + JSON.stringify(err));
+      Prompt.showToast({
+        message:"账户密码错误",
+        duration:2000,
 
-`      `httpRequest.destroy();
+      });
 
-`      `Prompt.showToast({
-`        `message:"账户密码错误",
-`        `duration:2000,
-
-`      `});
-
-`    `}
-`  `}
-` `);
+    }
+  }
+  );
 }
+```
 
 这段代码主要实现了一个手势识别界面，包括显示手势识别标题、提示信息，以及一个包含图像动画和控制按钮的界面。用户可以通过按钮控制动画的播放、暂停、结束，并设置撤销、播放次数等参数。图像动画通过ImageAnimator组件实现，根据按钮的点击事件改变动画状态和参数。
 
+```java
 Text("手势识别")
-.fontWeight(FontWeight.Bold)
-.fontSize(30)
+  .fontWeight(FontWeight.Bold)
+  .fontSize(30)
 Text("请根据下面顺序依次做动作")
-.fontWeight(FontWeight.Bold)
-.fontSize(20)
+  .fontWeight(FontWeight.Bold)
+  .fontSize(20)
 Column({ space: 20 }) {
-`  `ImageAnimator()
-.images([
-`      `{
-`        `src: $r('app.media.shoushi7')
-`      `},
-`      `{
-`        `src: $r('app.media.shoushi6')
-`      `},
-`      `{
-`        `src: $r('app.media.shoushi3')
-`      `},
-`      `{
-`        `src: $r('app.media.shoushi4')
-`      `},
-`      `{
-`        `src: $r('app.media.shoushi8')
-`      `},
-`      `{
-`        `src: $r('app.media.shoushi5')
-`      `}
+  ImageAnimator()
+    .images([
+      {
+        src: $r('app.media.shoushi7')
+      },
+      {
+        src: $r('app.media.shoushi6')
+      },
+      {
+        src: $r('app.media.shoushi3')
+      },
+      {
+        src: $r('app.media.shoushi4')
+      },
+      {
+        src: $r('app.media.shoushi8')
+      },
+      {
+        src: $r('app.media.shoushi5')
+      }
 
-`    `])
-.duration(13000)
-.state(**this**.state).reverse(**this**.reverse)
-.fillMode(FillMode.None).iterations(**this**.iterations).width(340).height(240)
-.margin({ top: 15 })
-.onStart(() => {
-`      `console.info('start')
-`    `})
-.onPause(() => {
-`      `console.info('Pause')
-`    `})
-.onRepeat(() => {
-`      `console.info('Repeat')
-`    `})
-.onCancel(() => {
-`      `console.info('Cancel')
-`    `})
-.onFinish(() => {
-`      `console.info('Finish')
-`      `**this**.state = AnimationStatus.Stopped
-`    `})
-`  `Row() {
-`    `Button('开始').width(100).padding(5).onClick(() => {
-`      `**this**.state = AnimationStatus.Running
-`    `}).margin(5)
-`    `Button('暂停').width(100).padding(5).onClick(() => {
-`      `**this**.state = AnimationStatus.Paused     // 显示当前帧图片
-`    `}).margin(5)
-`    `Button('结束').width(100).padding(5).onClick(() => {
-`      `**this**.state = AnimationStatus.Stopped    // 显示动画的起始帧图片
-`    `}).margin(5)
-`  `}
+    ])
+    .duration(13000)
+    .state(this.state).reverse(this.reverse)
+    .fillMode(FillMode.None).iterations(this.iterations).width(340).height(240)
+    .margin({ top: 15 })
+    .onStart(() => {
+      console.info('start')
+    })
+    .onPause(() => {
+      console.info('Pause')
+    })
+    .onRepeat(() => {
+      console.info('Repeat')
+    })
+    .onCancel(() => {
+      console.info('Cancel')
+    })
+    .onFinish(() => {
+      console.info('Finish')
+      this.state = AnimationStatus.Stopped
+    })
+  Row() {
+    Button('开始').width(100).padding(5).onClick(() => {
+      this.state = AnimationStatus.Running
+    }).margin(5)
+    Button('暂停').width(100).padding(5).onClick(() => {
+      this.state = AnimationStatus.Paused     // 显示当前帧图片
+    }).margin(5)
+    Button('结束').width(100).padding(5).onClick(() => {
+      this.state = AnimationStatus.Stopped    // 显示动画的起始帧图片
+    }).margin(5)
+  }
 
-`  `Row() {
-`    `Button('撤销').width(100).padding(5).onClick(() => {
-`      `**this**.reverse = !**this**.reverse
-`    `}).margin(5)
-`    `Button('一次').width(100).padding(5).onClick(() => {
-`      `**this**.iterations = 1
-`    `}).margin(5)
-`    `Button('循环').width(100).padding(5).onClick(() => {
-`      `**this**.iterations = -1 // 无限循环播放
-`    `}).margin(5)
-`  `}
+  Row() {
+    Button('撤销').width(100).padding(5).onClick(() => {
+      this.reverse = !this.reverse
+    }).margin(5)
+    Button('一次').width(100).padding(5).onClick(() => {
+      this.iterations = 1
+    }).margin(5)
+    Button('循环').width(100).padding(5).onClick(() => {
+      this.iterations = -1 // 无限循环播放
+    }).margin(5)
+  }
 }
+
+Button('开始测试')
+  .width(300)
+  .height(60)
+  .margin(20)
+  .fontSize(20)
+  .backgroundColor('#0F40F5')
+  .onClick(() => {
+    //调用与后端交互的方法
+    this.S_login();
+  })
+```
 ## <a name="_toc150461022"></a>**3.5 功能模块设计**
 ### <a name="_toc150461023"></a>**3.5.1 我的页面**
 可修改昵称，查看我的信息，健康报告，我的收藏和设置。
@@ -438,9 +453,7 @@ Column({ space: 20 }) {
 
 我的信息里可修改伤残类型和伤残日期。
 
-![图形用户界面, 应用程序
-
-描述已自动生成](Aspose.Words.ce33244a-6ec5-4234-a290-ad7348f15b6c.004.png)
+![](Aspose.Words.ce33244a-6ec5-4234-a290-ad7348f15b6c.004.png)
 
 **图3-3 修改信息**
 
@@ -475,4 +488,3 @@ Column({ space: 20 }) {
 兼容性：主被动式断指辅具应能够与OpenHarmony操作系统良好地兼容，实现信息的传输和控制。同时应具备良好的可扩展性和可升级性，以便在未来进行功能扩展和升级。
 
 创新性：主被动式断指辅具应具备创新性，能够充分体现参赛者的创意和独特性。创新的设计和功能可以为主被动式断指辅具带来更多的应用前景和市场潜力。
-17
