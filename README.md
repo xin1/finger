@@ -128,7 +128,7 @@ Login() {
       console.info('code:' + data.responseCode);
       console.info('header:' + JSON.stringify(data.header));
       console.info('cookies:' + data.cookies);
-      //修改3：对data.result进行处理，此例子是后端传递回来登录成功，在控制台上打印okok，则根据自己需求将下方修改即可
+     
       if(data.result == '登录成功') {
         router.push({
           url:"pages/fuwu"
@@ -152,7 +152,7 @@ Login() {
 }
 ```
 ### <a name="_toc150461019"></a>**3.4.2 修改昵称**
-首先在前端应用中创建一个弹窗元素，包括一个文本输入框、一段文字、以及两个按钮，用于实现修改昵称的功能。
+在前端应用中创建一个弹窗元素，包括一个文本输入框、一段文字、以及两个按钮，用于实现修改昵称的功能。
 
 ```java
 Text('更换昵称').fontSize(20).margin({ top: 10, bottom: 10 })
@@ -179,7 +179,7 @@ Flex({ justifyContent: FlexAlign.SpaceAround }) {
 
 ```java
 @State textValue: string = ''
-@State inputValue: string = '昵称'//设置需要修改的初始值
+@State inputValue: string = '昵称'
 dialogController: CustomDialogController = new CustomDialogController({
   builder: CustomDialogExample({
     cancel: this.onCancel,
@@ -214,16 +214,16 @@ existApp() {
 ```
 
 ### <a name="_toc150461020"></a>**3.4.3 信息选择**
-这段代码的目的是创建一个按钮，当点击按钮时，弹出一个文本选择对话框，用户可以从中选择伤残类型。选择的结果会通过回调函数进行处理。
+创建一个按钮，当点击按钮时，弹出一个文本选择对话框，用户可以从中选择伤残类型。选择的结果会通过回调函数进行处理。
 ```java
 Button("伤残类型")
   .margin(20)
   .onClick(() => {
     TextPickerDialog.show({
       range: this.shangcanage,
-      //selected: this.select1,
+      
       onAccept: (value: TextPickerResult) => {
-        // 设置select为按下确定按钮时候的选中项index，这样当弹窗再次弹出时显示选中的是上一次确定的选项
+      
         this.select1 = value.index
         console.info("TextPickerDialog:onAccept()" + JSON.stringify(value))
       },
@@ -238,7 +238,7 @@ Button("伤残类型")
 ```
 
 ### <a name="_toc150461021"></a>**3.4.4 康复评估**
-首先设置数据传输，用来训练数据得到结果。
+设置数据传输，用来训练数据得到结果。
 
 创建一个 HTTP 请求对象，定义了请求的 URL，使用 request 方法发起 HTTP 请求，指定了请求方法为POST，设置请求头为JSON 格式。
 
@@ -299,7 +299,7 @@ S_login() {
       httpRequest.destroy();
 
       Prompt.showToast({
-        message:"账户密码错误",
+        message:"错误",
         duration:2000,
 
       });
@@ -310,7 +310,7 @@ S_login() {
 }
 ```
 
-这段代码主要实现了一个手势识别界面，包括显示手势识别标题、提示信息，以及一个包含图像动画和控制按钮的界面。用户可以通过按钮控制动画的播放、暂停、结束，并设置撤销、播放次数等参数。图像动画通过ImageAnimator组件实现，根据按钮的点击事件改变动画状态和参数。
+手势识别界面，包括显示手势识别标题、提示信息，以及一个包含图像动画和控制按钮的界面。用户可以通过按钮控制动画的播放、暂停、结束，并设置撤销、播放次数等参数。图像动画通过ImageAnimator组件实现，根据按钮的点击事件改变动画状态和参数。
 
 ```java
 Text("手势识别")
@@ -327,18 +327,6 @@ Column({ space: 20 }) {
       },
       {
         src: $r('app.media.shoushi6')
-      },
-      {
-        src: $r('app.media.shoushi3')
-      },
-      {
-        src: $r('app.media.shoushi4')
-      },
-      {
-        src: $r('app.media.shoushi8')
-      },
-      {
-        src: $r('app.media.shoushi5')
       }
 
     ])
@@ -367,25 +355,12 @@ Column({ space: 20 }) {
       this.state = AnimationStatus.Running
     }).margin(5)
     Button('暂停').width(100).padding(5).onClick(() => {
-      this.state = AnimationStatus.Paused     // 显示当前帧图片
+      this.state = AnimationStatus.Paused  
     }).margin(5)
     Button('结束').width(100).padding(5).onClick(() => {
-      this.state = AnimationStatus.Stopped    // 显示动画的起始帧图片
+      this.state = AnimationStatus.Stopped  
     }).margin(5)
   }
-
-  Row() {
-    Button('撤销').width(100).padding(5).onClick(() => {
-      this.reverse = !this.reverse
-    }).margin(5)
-    Button('一次').width(100).padding(5).onClick(() => {
-      this.iterations = 1
-    }).margin(5)
-    Button('循环').width(100).padding(5).onClick(() => {
-      this.iterations = -1 // 无限循环播放
-    }).margin(5)
-  }
-}
 
 Button('开始测试')
   .width(300)
@@ -394,13 +369,12 @@ Button('开始测试')
   .fontSize(20)
   .backgroundColor('#0F40F5')
   .onClick(() => {
-    //调用与后端交互的方法
     this.S_login();
   })
 ```
 ## <a name="_toc150461022"></a>**3.5 功能模块设计**
 ### <a name="_toc150461023"></a>**3.5.1 我的页面**
-可修改昵称，查看我的信息，健康报告，我的收藏和设置。
+在此页面里可修改昵称，查看我的信息，健康报告，我的收藏和设置。
 
 ![](wode.png)
 
@@ -418,7 +392,7 @@ Button('开始测试')
 
 **图3-4 健康报告**
 ### <a name="_toc150461024"></a>**3.5.2 康复评估**
-健康数据监测，患者跟着展示手势每隔4s做一个动作。
+健康数据监测，展示手势每隔4s做一个动作，患者依据展示图片完成相应手势来进行检测。
 
 ![](shoushishibie.png)
 
