@@ -417,3 +417,6 @@ Button('开始测试')
 兼容性：主被动式断指辅具应能够与OpenHarmony操作系统良好地兼容，实现信息的传输和控制。同时应具备良好的可扩展性和可升级性，以便在未来进行功能扩展和升级。
 
 创新性：主被动式断指辅具应具备创新性，能够充分体现参赛者的创意和独特性。创新的设计和功能可以为主被动式断指辅具带来更多的应用前景和市场潜力。
+
+[![](https://i1.hdslb.com/bfs/archive/9a32c55b90ac9485d02dc1a50dc1fa94d12b3111.jpg@640w_400h_1c.webp)](https://player.bilibili.com/player.html?aid=748530739&bvid=BV1zC4y1j7Vh&cid=1334453062&p=1)
+
