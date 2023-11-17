@@ -68,7 +68,7 @@ OpenHarmony作为一种开源的操作系统，为断指辅具的开发提供了
 
 项目架构图：
 
-![](dagang.png)
+![](./image/dagang.png)
 
 **图3-1 项目设计架构**
 ## <a name="_toc150461016"></a>**3.3 功能描述**
@@ -376,31 +376,31 @@ Button('开始测试')
 ### <a name="_toc150461023"></a>**3.5.1 我的页面**
 在此页面里可修改昵称，查看我的信息，健康报告，我的收藏和设置。
 
-![](wode.png)
+![](./image/wode.png)
 
 **图3-2 我的页面**
 
 我的信息里可修改伤残类型和伤残日期。
 
-![](wodexinxi.png)
+![](./image/wodexinxi.png)
 
 **图3-3 修改信息**
 
 健康报告里可查看生成的健康报告。
 
-![](jiankangbaogao.png)
+![](./image/jiankangbaogao.png)
 
 **图3-4 健康报告**
 ### <a name="_toc150461024"></a>**3.5.2 康复评估**
 健康数据监测，展示手势每隔4s做一个动作，患者依据展示图片完成相应手势来进行检测。
 
-![](shoushishibie.png)
+![](./image/shoushishibie.png)
 
 **图3-5 康复评估**
 ### <a name="_toc150461025"></a>**3.5.3 健康服务**
 患者查看医生信息进行挂号。
 
-![](yisheng.png)
+![](./image/yisheng.png)
 
 **图3-6 健康服务**
 ### <a name="_toc150461026"></a>**3.5.4 社交支持和资源分享**
