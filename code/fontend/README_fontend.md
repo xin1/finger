@@ -1,1 +1,1 @@
-[主要代码](code/fontend/MyApplication/first/entry/src/main/ets/pages)
+[主要代码](./MyApplication/first/entry/src/main/ets/pages)
