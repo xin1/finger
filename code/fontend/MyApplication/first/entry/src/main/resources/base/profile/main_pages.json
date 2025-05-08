@@ -1,0 +1,19 @@
+{
+  "src": [
+    "pages/denglu1",
+    "pages/denglu2",
+    "pages/wode",
+    "pages/denglu",
+    "pages/fuwu",
+    "pages/yisheng",
+    "pages/shibie",
+    "pages/zhuce",
+    "pages/ceshi2",
+    "pages/jiankangbaogao",
+    "pages/shezhi",
+    "pages/wodeshoucang",
+    "pages/wodexinxi",
+    "pages/baogao",
+    "pages/LoginPage"
+  ]
+}
