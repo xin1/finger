@@ -68,7 +68,7 @@ OpenHarmony作为一种开源的操作系统，为断指辅具的开发提供了
 
 项目架构图：
 
-![](finger/image/dagang.png)
+![](./image/dagang.png)
 
 **图3-1 项目设计架构**
 ## <a name="_toc150461016"></a>**3.3 功能描述**
